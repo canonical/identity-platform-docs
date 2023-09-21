@@ -1,5 +1,3 @@
-# IAM Bundle Deployment Tutorial
-
 ## Introduction
 
 The Canonical Identity Platform is a composable identity broker and identity provider based on open source products from [Ory](https://www.ory.sh/open-source/), [Postgres](https://www.postgresql.org/) and [Traefik Labs](https://traefik.io/).

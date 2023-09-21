@@ -1,5 +1,3 @@
-# Login Flow Reference
-
 The Login Flow begins when a user is trying to access an application (which we'll interchangeably refer to as an OAuth client). The application initially executes its own logic for checking whether the user is already logged in (has a valid session cookie). If no valid session is found, the application presents the user with an authentication page, where the Sign In with Canonical Identity button is present.
 
 Clicking that button starts the (simplified) login flow described below:. 

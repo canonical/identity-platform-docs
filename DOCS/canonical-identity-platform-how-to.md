@@ -1,5 +1,3 @@
-# Step-by-step guides covering key operations and common tasks.
-
 - [Integrate with external identity providers]()
 - [Integrate with OIDC compatible charms]()
 - [Integrate with Canonical Observability Stack]()

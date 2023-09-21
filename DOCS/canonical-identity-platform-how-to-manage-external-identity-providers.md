@@ -1,5 +1,3 @@
-# How To Manage External Identity Providers
-
 The Identity Platform bundle is an Identity broker, this means that it relies on external identity providers to authenticate users and manage user attributes. This documentation explains how to integrate with external providers. 
 
 ## Integrate with External Provider

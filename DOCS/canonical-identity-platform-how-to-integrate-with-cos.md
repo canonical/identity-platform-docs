@@ -1,5 +1,3 @@
-# Integrate with the Canonical Observability Stack
-
 This document shows how to integrate the different components of the [Canonical Identity platform]() with the [Canonical Observability Stack](https://charmhub.io/topics/canonical-observability-stack) to enable the preconfigured dashboard and alerting rules.
 
 The Canonical Observability Stack ([COS-Lite](https://charmhub.io/topics/canonical-observability-stack)) is a Juju bundle that includes a series of open source observability applications and related automation. For the complete list of components in the COS, read the [Component List](https://charmhub.io/topics/canonical-observability-stack/editions/lite).

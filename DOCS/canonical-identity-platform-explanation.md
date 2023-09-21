@@ -1,5 +1,3 @@
-# Concepts - discussion and clarification of key topics.
-
 - [What is an OIDC compatible application?](https://ubuntu.com/identity/what-is-oidc)
 
 # Navigation

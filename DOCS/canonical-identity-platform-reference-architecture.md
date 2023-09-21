@@ -1,5 +1,3 @@
-# Canonical Identity Platform Architecture
-
 The below diagram describes the high level architecture of the Canonical Identity Platform and its dependencies:
 
 ![Alt text](https://drive.google.com/file/d/1FIF146yVAdJqrJ2khIkueRBFLZ9gCC44/view "Canonical Identity Platform Architecture")

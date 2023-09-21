@@ -1,5 +1,3 @@
-# How To Integrate With OIDC Compatible Charms
-
 The Identity Platform provides seamless integration with your OIDC compatible charms using the power of juju relations. We are going to assume that:
 1. You have deployed the [identity platform bundle](link to tutorial).
 2. You have deployed an OIDC compatible charmed application.

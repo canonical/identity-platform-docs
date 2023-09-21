@@ -1,5 +1,3 @@
-# Canonical Identity Platform
-
 Composable identity provider and identity broker system based on [Juju](http://juju.is).
 
 The Canonical Identity Platform is the simplest way to add single sign on (SSO) for charmed workloads and centralized authentication, authorisation and access governance controls.

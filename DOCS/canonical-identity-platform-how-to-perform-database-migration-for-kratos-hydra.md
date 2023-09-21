@@ -1,5 +1,3 @@
-# Database migration for charmed Kratos/Hydra
-
 This document provides some migration strategies that can be adopted in large scale, production environments.
 
 Charmed [Kratos](https://github.com/canonical/kratos-operator) and [Hydra](https://github.com/canonical/hydra-operator) in the Identity Platform [Juju Bundle](https://github.com/canonical/iam-bundle) use Charmed [PostgreSQL](https://charmhub.io/postgresql-k8s) as the data backend. Since upstream Ory Kratos/Hydra introduce SQL migrations between releases it is important to perform the right steps to avoid service interruptions.
