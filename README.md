@@ -6,9 +6,4 @@ This repository hosts and syncs all documentations relating to the Canonical Ide
 Documentations on this repository are automatically synced to the bundle's discord page.
 
 ## Usage
-
-## TODO
-- Fill out Usage section to describe the syncing process
-- Create github actions to check and sync docs with [discourse-sync](https://github.com/juju/juju/tree/main/scripts/discourse-sync)
-- Push docs in markdown format
-- Add links to charmhub
+*Under development*
