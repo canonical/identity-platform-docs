@@ -5,7 +5,7 @@ The Canonical Observability Stack ([COS-Lite](https://charmhub.io/topics/canonic
 ## Prerequisites
 
 - A running [COS-Lite](https://charmhub.io/topics/canonical-observability-stack) bundle. You can follow the [Getting started on MicroK8s](https://charmhub.io/topics/canonical-observability-stack/tutorials/install-microk8s) tutorial to get you started. Make sure to follow the section **Deploy the COS Lite** bundle with overlays sections.
-- A running Canonical Identity Platform bundle. Please refer to the [tutorial]().
+- A running Canonical Identity Platform bundle. Please refer to the [tutorial](/t/11916).
 
 It is generally recommended to keep the observability stack separate from any observed applications to separate failure domains. This document assumes that the Identity Platform and the COS bundles are deployed to different models.
 
@@ -99,30 +99,31 @@ The default credentials are:
 
 Once in, you will see a vertical menu bar on the left side of the page. You will find the available alerts by clicking on the Alerting menu. You will find the available dashboards by clicking on the Dashboards menu
 
-You can find a technical description of the observability setup in the related [reference section]() of the docs.
+You can find a technical description of the observability setup in the related [reference section](/t/11915) of the docs.
 
 # Navigation
 [details=Navigation]
 |Level|Path|Navlink|
 |--|--|--|
-| 1 | overview | [Home]() |
-| 1 | tutorials | [Tutorial]() |
-| 2 | tutorials/e2e-tutorial | [Getting started with the Canonical Identity Platform]() |
-| 1 | how-to | [How-to guides]() |
-| 2 | how-to/integrate-external-identity-provider | [Integrate with external identity providers]() |
-| 2 | how-to/integrate-oidc-compatible-charms | [Integrate with OIDC compatible charms ]() |
-| 2 | how-to/integrate-cos | [Integrate with Canonical Observability Stack]() |
-| 1 | explanation | [Explanation]() |
-| 2 | explanation/what-is-oidc | [What is an OIDC compatible application?]() |
-| 1 | reference | [Reference]() |
+| 1 | overview | [Home](/t/11825) |
+| 1 | tutorials | [Tutorial](/t/11917) |
+| 2 | tutorials/e2e-tutorial | [Getting started with the Canonical Identity Platform](/t/11916) |
+| 1 | how-to | [How-to guides](/t/11911) |
+| 2 | how-to/integrate-external-identity-provider | [Integrate with external identity providers](/t/11910) |
+| 2 | how-to/integrate-oidc-compatible-charms | [Integrate with OIDC compatible charms ](/t/11909) |
+| 2 | how-to/integrate-cos | [Integrate with Canonical Observability Stack](/t/11908) |
+| 2 | how-to/ory-database-migration | [Perform Database Migration with Identity Platform Components](/t/11912) |
+| 1 | explanation | [Explanation](/t/11907) |
+| 2 | explanation/what-is-oidc | What is an OIDC compatible application? |
+| 1 | reference | [Reference](/t/11915) |
 | 2 | reference/bundles | Bundles |
 | 3 | reference/bundles/identity-platform | [Identity Platform](https://charmhub.io/identity-platform) |
-| 3 | reference/bundles/architecture | [Architecture]() |
-| 3 | reference/bundles/login-flow | [Login flow]() |
+| 3 | reference/bundles/architecture | [Architecture](/t/11913) |
+| 3 | reference/bundles/login-flow | [Login flow](/t/11914) |
 | 2 | reference/observability | Observability setup |
-| 3 | reference/observability/metrics | [Metrics]() |
-| 3 | reference/observability/alert-rules | [Alert rules]() |
-| 3 | reference/observability/dashboards | [Dashboards]() |
+| 3 | reference/observability/kratos-observability | [Kratos Observability](/t/11931) |
+| 3 | reference/observability/hydra-observability | [Hydra Observability](/t/11930) |
+| 3 | reference/observability/identity-platform-login-ui-observability | [Identity Platform Login UI Observability](/t/11932) |
 | 2 | reference/kubernetes-charms | Kubernetes Charms |
 | 3 | reference/kubernetes-charms/hydra | [Hydra](https://charmhub.io/hydra) |
 | 3 | reference/kubernetes-charms/kratos | [Kratos](https://charmhub.io/kratos) |
