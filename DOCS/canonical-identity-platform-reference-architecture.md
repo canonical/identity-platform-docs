@@ -1,6 +1,6 @@
 The below diagram describes the high level architecture of the Canonical Identity Platform and its dependencies:
 
-![Alt text](https://drive.google.com/file/d/1FIF146yVAdJqrJ2khIkueRBFLZ9gCC44/view "Canonical Identity Platform Architecture")
+![Alt text]( "Canonical Identity Platform Architecture")
 
 The Canonical Identity Platform is an identity broker: it connects identity providers (Microsoft Azure Active Directory, Okta, Google, GitHub, ...) with multiple service providers (Grafana, Kafka, and/or other charmed workloads).
 
