@@ -16,7 +16,7 @@ While primarily designed for charmed workloads the Canonical Identity Platform c
 | | |
 |-|-|
 | [Tutorial](/t/11917)</br>  Get started - a hands-on introduction for new users deploying the Identity Platform.</br> | [How-to guides](/t/11911) </br> Step-by-step guides covering key operations and common tasks |
-| [Explanation](/t/11907) </br> Concepts - discussion and clarification of key topics                   |  [Reference](/t/11915) </br> Technical information - specifications, APIs, architecture    |
+| [Reference](/t/11915) </br> Technical information - specifications, APIs, architecture    |
 
 ## Project and community
 
@@ -42,8 +42,6 @@ Thinking about using the Canonical Identity Platform for your next project? [Get
 | 2 | how-to/integrate-oidc-compatible-charms | [Integrate with OIDC compatible charms ](/t/11909) |
 | 2 | how-to/integrate-cos | [Integrate with Canonical Observability Stack](/t/11908) |
 | 2 | how-to/ory-database-migration | [Perform Database Migration with Identity Platform Components](/t/11912) |
-| 1 | explanation | [Explanation](/t/11907) |
-| 2 | explanation/what-is-oidc | What is an OIDC compatible application? |
 | 1 | reference | [Reference](/t/11915) |
 | 2 | reference/bundles | Bundles |
 | 3 | reference/bundles/identity-platform | [Identity Platform](https://charmhub.io/identity-platform) |

@@ -23,7 +23,7 @@ def main():
 
 def getAnchorID(id: int):
     desired_width = 4
-    return "{:0>{}}".format(id, desired_width)
+    return "heading--{:0>{}}".format(id, desired_width)
 
 
 def isUsefulHeader(line: str):
