@@ -6,4 +6,4 @@ This repository hosts and syncs all documentations relating to the Canonical Ide
 Documentations on this repository are automatically synced to the bundle's discord page.
 
 ## Usage
-*Under development*
+TBD
