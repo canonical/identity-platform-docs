@@ -15,8 +15,8 @@ While primarily designed for charmed workloads the Canonical Identity Platform c
 
 | | |
 |-|-|
-| [Tutorial](/tutorial-url)</br>  Get started - a hands-on introduction for new users deploying the Identity Platform.</br> | [How-to guides](/guide-url) </br> Step-by-step guides covering key operations and common tasks |
-| [Explanation](/explanation-url) </br> Concepts - discussion and clarification of key topics                   |  [Reference](/reference-url) </br> Technical information - specifications, APIs, architecture    |
+| [Tutorial](/t/11917)</br>  Get started - a hands-on introduction for new users deploying the Identity Platform.</br> | [How-to guides](/t/11911) </br> Step-by-step guides covering key operations and common tasks |
+| [Explanation](/t/11907) </br> Concepts - discussion and clarification of key topics                   |  [Reference](/t/11915) </br> Technical information - specifications, APIs, architecture    |
 
 ## Project and community
 
