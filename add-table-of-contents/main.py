@@ -11,7 +11,7 @@ NAVIGATION_MATCH = "Navigation"
 PHASE_PRE_HEADER = 0
 PHASE_POST_HEADER = 1
 
-ANCHOR_TEMPLATE = '<a id={}></a>\n'
+ANCHOR_TEMPLATE = '<a href="#{0}"><h{1} id="{0}">{2}</h{1}></a>\n'
 TOC_TEMPLATE = '* [{}](#{})\n'
 
 
@@ -31,23 +31,23 @@ def isUsefulHeader(line: str):
 
     header = re.findall(HEADER_MATCH, line)
     not_navigation = not re.findall(NAVIGATION_MATCH, line)
-    return (header and not_navigation, header)
+    return (header and not_navigation, len(header[0]))
 
 
 def constructTOC(anchorList):
     """Renders markdown of TOC with nested lists"""
 
-    tocList = ["**Table of contents:**\n"]
+    tocList = ["**Contents:**\n"]
     startHeaderLevel = 1
     start = True
 
     for (item, anchor, header) in anchorList:
         if start:
             start = False
-            startHeaderLevel = len(header[0])
+            startHeaderLevel = header
             tocList.append(TOC_TEMPLATE.format(item, anchor))
         else:
-            checkHeader = len(header[0])
+            checkHeader = header
             indentLevel = checkHeader - startHeaderLevel
             if indentLevel < 0:
                 indentLevel = 0
@@ -76,8 +76,7 @@ def processDoc(doc):
                     itemString = line.strip("#").strip()
                     anchorCounter += 1
 
-                    content.append(ANCHOR_TEMPLATE.format(anchorString))
-                    content.append(line)
+                    content.append(ANCHOR_TEMPLATE.format(anchorString, mkHeader, itemString))
                     anchorList.append((itemString, anchorString, mkHeader))
                     phase = PHASE_POST_HEADER
                 else:
@@ -88,9 +87,10 @@ def processDoc(doc):
                     itemString = line.strip("#").strip()
                     anchorCounter += 1
 
-                    content.append(ANCHOR_TEMPLATE.format(anchorString))
+                    content.append(ANCHOR_TEMPLATE.format(anchorString, mkHeader, itemString))
                     anchorList.append((itemString, anchorString, mkHeader))
-                content.append(line)
+                else:
+                    content.append(line)
 
     toc = constructTOC(anchorList)
 
