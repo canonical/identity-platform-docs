@@ -1,4 +1,4 @@
-## Introduction
+# Introduction
 
 The Canonical Identity Platform is a composable identity broker and identity provider based on open source products from [Ory](https://www.ory.sh/open-source/), [Postgres](https://www.postgresql.org/) and [Traefik Labs](https://traefik.io/).
 
@@ -9,7 +9,7 @@ The core components of the Canonical Identity Platform are grouped in a [Juju Bu
 3. Configure Azure AD as an external identity provider
 4. Deploy Charmed Grafana and add single sign on
 
-## Requirements
+# Requirements
 
 This tutorial assumes you have 
 

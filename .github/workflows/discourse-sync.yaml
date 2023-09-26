@@ -6,6 +6,7 @@ jobs:
   check:
     name: Sync DOCS content to Discourse
     runs-on: ubuntu-22.04
+    if: github.ref == 'refs/heads/main'
     steps:
       - name: Checkout
         uses: actions/checkout@3df4ab11eba7bda6032a0b82a6bb43b11571feac # v4
@@ -13,10 +14,18 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r discourse-sync/requirements.txt
+      - name: Run add-tabel-of-contents
+        env:
+          TOC_INPUT: ./DOCS
+          TOC_OUTPUT: ./DOCS_TOC
+        run : |
+          mkdir ./DOCS_TOC
+          python ./add-tabel-of-contents/main.py
       - name: Run discord-sync
         env:
           DISCOURSE_API_USERNAME: ${{ secrets.DISCOURSE_API_USERNAME }}
           DISCOURSE_API_KEY: ${{ secrets.DISCOURSE_API_KEY }}
-          DOCS_DIR: ./DOCS
+          DOCS_DIR: ./DOCS_TOC
           TOPIC_IDS: ./topic-ids.yaml
-        run: python ./discourse-sync/main.py sync
+        run: |
+          python ./discourse-sync/main.py sync
