@@ -31,11 +31,16 @@ def isUsefulHeader(line: str):
 
     header = re.findall(HEADER_MATCH, line)
     not_navigation = not re.findall(NAVIGATION_MATCH, line)
-    return (header and not_navigation, len(header[0]))
+    if header and not_navigation:
+        return (True, len(header[0]))
+    return (False, 0)
 
 
 def constructTOC(anchorList):
     """Renders markdown of TOC with nested lists"""
+
+    if not anchorList:
+        return []
 
     tocList = ["**Contents:**\n"]
     startHeaderLevel = 1
