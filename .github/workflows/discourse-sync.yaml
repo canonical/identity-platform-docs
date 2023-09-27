@@ -1,6 +1,9 @@
 name: Sync to Discourse
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   check:
