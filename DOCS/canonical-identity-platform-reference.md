@@ -1,3 +1,5 @@
+Technical information - specifications, APIs, architecture.
+
 ## Bundles
 
 - [Identity Platform](https://charmhub.io/identity-platform)
