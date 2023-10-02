@@ -5,10 +5,10 @@ The Identity Platform provides seamless integration with your OIDC compatible ch
 To integrate you need to run:
 
 ```
-juju integrate hydra application
+juju integrate hydra <OIDC compatible charmed application>
 ```
 
-Use ```juju status``` to inspect the progress of the integration. After the applications have settled down, you should be able to log in to your application using the Identity Platform
+Use ```juju status``` to inspect the progress of the integration. After the applications have settled down, you should be able to log in to your application using the Identity Platform.
 
 A full list of the charms supporting this relation can be found [here](https://charmhub.io/hydra/integrations), under the *oauth* integration.
 Further information about this relation can be found [here](https://github.com/canonical/charm-relation-interfaces/tree/main/interfaces/oauth/v0).
