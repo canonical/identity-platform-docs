@@ -1,40 +1,45 @@
-The Identity Platform bundle is an Identity broker, this means that it relies on external identity providers to authenticate users and manage user attributes. This documentation explains how to integrate with external providers. 
+The Identity Platform bundle is an Identity broker, this means that it relies on external identity providers to authenticate users and manage user attributes. This document demonstrates how to integrate with external providers.
 
-## Integrate with External Provider
+## Add an external identity provider
 
-The component of the Identity Platform responsible for integrating with Identity Providers is [Kratos](http://charmhub.io/kratos). There 2 actions needed to integrate with an Identity Provider:
-1. Register a client in the Identity Provider
-2. Provide the client credentials to Kratos
+To integrate the Identity Platform with an external Identity Provider, you need to register a client for Kratos in the Identity Provider and then provide the client credentials to Kratos.
 
 ### Register the client
 
-In this section we are going to register an oAuth2 client that Kratos can use to authenticate users. If you already have registered a client you can just skip to the next section.
+In this section we are going to register an oAuth2 client that Kratos can use to authenticate users. If you have already registered a client and configured its redirect URI, you can just skip to the next section.
 
-Each external Identity Provider has a different flow for registering a client. A list with instructions for some of the most common Providers can be seen below, if you can’t find your Provider below please refer to their documentation. 
+Each external Identity Provider has a different flow for registering a client. A list with instructions for some of the most common Providers can be seen below, if you can’t find your Provider below refer to their documentation.
 
-You will need to provide the client’s *redirect_uri* to the provider, which is the URL to which the user will be redirected to after they log in. You don’t need to provide it on registration time though.
+You will need to provide the client’s `redirect_uri` to the provider, which is the URL to which the user will be redirected to after they log in. You don’t need to provide it on registration time though.
 
-You can either calculate the URI yourself or get it after you provide the client credentials to Kratos as we will see in the next section.
+You can either calculate the URI yourself or get it after you provide the client credentials to Kratos.
 
-The *redirect_uri* will be:
+The `redirect_uri` will be:
 
-```https://<kratos-public-url>/<provider-id>```
+```https://<kratos-public-url>/self-service/methods/oidc/callback/<provider-id>```
 
-To get the kratos-public-url you can run: 
+To get the `kratos-public-url`, run:
 
 ```juju run traefik-public/0 show-proxied-endpoints  | yq '.proxied-endpoints' | jq '.kratos.url'```
 
-The *provider-id* can be anything you want, you will provide to Kratos in the next step. Every provider that is registered with Kratos needs to have a different *provider-id*, if you don’t provide a *provider-id*, one will be auto-generated.
+The `provider-id` can be anything you want. Every provider that is registered with Kratos needs to have a different `provider-id`. If you don’t provide a `provider-id`, one will be auto-generated.
 
-After registering the provider you need to have the following information: *client_id*, *client_secret*.
+After registering the provider you need to have the following information: `client_id`, `client_secret`.
 
-#### Azure AD 
+#### Azure AD
 
-To create a confidential client in Azure AD follow the instructions found in the [Microsoft documentation](https://learn.microsoft.com/en-us/azure/healthcare-apis/register-application#register-a-new-application).
+You will need to create a confidential client in Azure AD and retrieve the client_id of the client.
 
-Once the client is registered, you have to create a secret by following the instructions found in the [Microsoft documentation](https://learn.microsoft.com/en-us/azure/healthcare-apis/register-application#certificates--secrets). Make sure to save the *client_secret*. And keep it confidential.
+> See more: [Microsoft | Azure > Register a new application](https://learn.microsoft.com/en-us/azure/healthcare-apis/register-application#register-a-new-application)
 
-You then need to find and copy the *tenant_id* by following these [instructions](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/how-to-find-tenant).
+Once the client is registered, create a secret.
+
+> See more: [Microsoft | Azure Register a new application > Certificates & Secrets](https://learn.microsoft.com/en-us/azure/healthcare-apis/register-application#certificates--secrets)
+
+
+You then need to retrieve the tenant_id.
+
+> See more: [Microsoft | Azure > How to find a tenant](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/how-to-find-tenant)
 
 #### Google
 
@@ -80,15 +85,15 @@ juju config kratos-external-idp-integrator \
 
 ### Choose Provider ID
 
-You can now also choose a *provider-id*, if you wish to, by running:
+You can now also choose a `provider-id`, if you wish to, by running:
 
 ```
-juju config kratos-external-idp-integrator provider_id=<provider-id> 
+juju config kratos-external-idp-integrator provider_id=<provider-id>
 ```
 
 ### Get the redirect_uri
 
-You can run ```juju status``` to inspect the status of the charm. Once the charm becomes active, you can get the *redirect_uri* of the client by running:
+You can run `juju status` to inspect the status of the charm. Once the charm becomes active, you can get the `redirect_uri` of the client by running:
 
 ```
 juju run kratos-external-idp-integrator/0 get-redirect-uri
