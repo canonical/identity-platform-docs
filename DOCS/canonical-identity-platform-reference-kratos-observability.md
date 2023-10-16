@@ -2,6 +2,8 @@ The Kratos charmed Operator of the IAM Platform provides integrations to the Can
 
 In this reference we will provide a technical description of the alert rules, and the dashboards the Kratos operator passes to the components of the COS. We will also showcase the Metrics we use to provide observability features.
 
+> See more: [Charmhub | Kratos > Integrations > `metrics-endpoint`,  `grafana-dashboard`](https://charmhub.io/kratos/integrations)
+
 
 ## Metrics
 
