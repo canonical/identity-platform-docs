@@ -2,6 +2,8 @@ Composable identity provider and identity broker system based on [Juju](http://j
 
 The Canonical Identity Platform is the simplest way to add single sign on (SSO) for charmed workloads and centralized authentication, authorisation and access governance controls.
 
+> See more: [Identity Platform](https://charmhub.io/identity-platform)
+
 The Canonical Identity Platform uses best of breed open source software to provide:
 - The ability to configure SSO with third party, OIDC compliant identity providers (e.g. Azure AD, Google, Okta, etc.)
 - A standard compliant compliant OAuth/OIDC server 
