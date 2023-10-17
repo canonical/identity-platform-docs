@@ -2,6 +2,8 @@ Composable identity provider and identity broker system based on [Juju](http://j
 
 The Canonical Identity Platform is the simplest way to add single sign on (SSO) for charmed workloads and centralized authentication, authorisation and access governance controls.
 
+> See more: [Identity Platform](https://charmhub.io/identity-platform)
+
 The Canonical Identity Platform uses best of breed open source software to provide:
 - The ability to configure SSO with third party, OIDC compliant identity providers (e.g. Azure AD, Google, Okta, etc.)
 - A standard compliant compliant OAuth/OIDC server 
@@ -42,7 +44,7 @@ Thinking about using the Canonical Identity Platform for your next project? [Get
 | 2 | how-to/integrate-oidc-compatible-charms | [Integrate with OIDC compatible charms ](/t/11909) |
 | 2 | how-to/integrate-cos | [Integrate with Canonical Observability Stack](/t/11908) |
 | 2 | how-to/ory-database-migration | [Perform Database Migration with Identity Platform Components](/t/11912) |
-| 1 | reference | [Reference](/t/11915) |
+| 1 | reference | Reference |
 | 2 | reference/bundles | Bundles |
 | 3 | reference/bundles/identity-platform | [Identity Platform](https://charmhub.io/identity-platform) |
 | 3 | reference/bundles/architecture | [Architecture](/t/11913) |

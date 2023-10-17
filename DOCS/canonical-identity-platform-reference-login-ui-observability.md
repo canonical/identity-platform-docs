@@ -2,6 +2,9 @@ The Identity Platform Login UI Operator of the IAM Platform provides integration
 
 In this reference we will provide a technical description of the alert rules, and the dashboards the Identity Platform Login UI operator passes to the components of the COS. We will also showcase the Metrics we use to provide observability features.
 
+> See more: [Charmhub | Identity Platform Login Ui Operator > Integrations > `metrics-endpoint`,  `grafana-dashboard`](https://charmhub.io/identity-platform-login-ui-operator/integrations)
+
+
 ## Metrics
 ### up
 #### Description

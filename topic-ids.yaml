@@ -6,9 +6,11 @@ canonical-identity-platform-how-to: 11911
 canonical-identity-platform-how-to-perform-database-migration-for-kratos-hydra: 11912
 canonical-identity-platform-reference-architecture: 11913
 canonical-identity-platform-reference-login-flow: 11914
-canonical-identity-platform-reference: 11915
+# canonical-identity-platform-reference: 11915
 canonical-identity-platform-tutorial-deploy-identity-bundle: 11916
 canonical-identity-platform-tutorials: 11917
 canonical-identity-platform-reference-hydra-observability: 11930
 canonical-identity-platform-reference-kratos-observability: 11931
 canonical-identity-platform-reference-login-ui-observability: 11932
+kratos: 12136
+hydra: 12158
