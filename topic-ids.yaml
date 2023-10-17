@@ -14,3 +14,5 @@ canonical-identity-platform-reference-kratos-observability: 11931
 canonical-identity-platform-reference-login-ui-observability: 11932
 kratos: 12136
 hydra: 12158
+kratos-external-idp-provider: 12168
+identity-platform-login-ui: 12169
