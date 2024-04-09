@@ -42,12 +42,11 @@ OpenFGA is a member of the Ubuntu family. It’s an open source project that war
 
 | Level | Path | Navlink |
 | -- | -- | -- |
-| 1 |  | [Home](/t/openfga-docs-index) |
-| 1 | how-to | [How-to guides]() |
+| 1 |  | [Home](t/openfga) |
+| 1 | how-to | [How-to guides](/t/openfga-how-to) |
 | 2 | configure | [Configure]() |
 | 1 | reference | Reference |
-| 2 | reference/observability | Observability setup |
-| 3 | reference/observability/openfga-observability | [OpenFGA Observability]() |
+| 3 | reference/openfga-observability | [OpenFGA Observability](/t/openfga-reference-openfga-observability) |
 | 1 | resources | [Resources](https://charmhub.io/openfga-k8s/resources) |
 | 1 | integrations | [Integrations](https://charmhub.io/openfga-k8s/integrations) |
 | 1 | libraries | [Libraries](https://charmhub.io/openfga-k8s/libraries) |
