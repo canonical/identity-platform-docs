@@ -49,7 +49,7 @@ OpenFGA is a member of the Ubuntu family. It’s an open source project that war
 | Level | Path | Navlink |
 | -- | -- | -- |
 | 1 |  | [Home](/t/13826) |
-| 1 | tutorial | [install](/t/13827) |
+| 1 | tutorial | [Tutorial](/t/13827) |
 <!-- | 1 | how-to | [How-to guides]() | -->
 <!-- | 2 | configure | [Configure](/t/<discourse-ID>) -->
 | 1 | reference | Reference |
