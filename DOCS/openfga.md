@@ -1,4 +1,10 @@
-# **OpenFGA**
+**Contents:**
+* [**OpenFGA**](#heading--0000)
+  * [In this documentation](#heading--0001)
+  * [Project and community](#heading--0002)
+* [Redirects](#heading--0003)
+
+<a href="#heading--0000"><h1 id="heading--0000">**OpenFGA**</h1></a>
 
 `OpenFGA` is a [Kubernetes charm](https://juju.is/docs/olm/charmed-operator) for [OpenFGA](https://github.com/openfga/openfga)
 
@@ -14,7 +20,7 @@ It offers an HTTP API and a gRPC API. It has SDKs for Node.js/JavaScript, GoLang
 
 <!--
 IF YOU HAVE OVERVIEW PAGES FOR THE VARIOUS DIATAXIS (https://diataxis.fr/) CATEGORIES: UNCOMMENT AND UPDATE THE SECTION BELOW AS WELL.
-## In this documentation
+<a href="#heading--0001"><h2 id="heading--0001">In this documentation</h2></a>
 
 | | |
 |-|-|
@@ -28,7 +34,7 @@ UPDATE THE SECTION BELOW TO REFLECT YOUR CHARM'S DETAILS.
 NOTE: FEEL FREE TO ADD ANY OTHER RELEVANT LINKS, E.G., A LINK TO THE CHARM'S DISCUSSION FORUM.
 -->
 
-## Project and community
+<a href="#heading--0002"><h2 id="heading--0002">Project and community</h2></a>
 
 OpenFGA is a member of the Ubuntu family. It’s an open source project that warmly welcomes community projects, contributions, suggestions, fixes and constructive feedback.
 
@@ -42,16 +48,18 @@ OpenFGA is a member of the Ubuntu family. It’s an open source project that war
 
 | Level | Path | Navlink |
 | -- | -- | -- |
-| 1 |  | [Home](t/openfga) |
-| 1 | how-to | [How-to guides](/t/openfga-how-to) |
-| 2 | configure | [Configure]() |
+| 1 |  | [Home](/t/13826) |
+| 1 | tutorial | [install](/t/13827) |
+<!-- | 1 | how-to | [How-to guides]() | -->
+<!-- | 2 | configure | [Configure](/t/<discourse-ID>) -->
 | 1 | reference | Reference |
-| 3 | reference/openfga-observability | [OpenFGA Observability](/t/openfga-reference-openfga-observability) |
-| 1 | resources | [Resources](https://charmhub.io/openfga-k8s/resources) |
-| 1 | integrations | [Integrations](https://charmhub.io/openfga-k8s/integrations) |
-| 1 | libraries | [Libraries](https://charmhub.io/openfga-k8s/libraries) |
-| 1 | configurations | [Configurations](https://charmhub.io/openfga-k8s/configure) |
-| 1 | actions | [Actions](https://charmhub.io/openfga-k8s/actions) |
+| 2 | reference/observability | [OpenFGA Observability](/t/13828) |
+| 2 | actions | [Actions](https://charmhub.io/openfga-k8s/actions) |
+| 2 | configurations | [Configurations](https://charmhub.io/openfga-k8s/configure) |
+| 2 | integrations | [Integrations](https://charmhub.io/openfga-k8s/integrations) |
+| 2 | libraries | [Libraries](https://charmhub.io/openfga-k8s/libraries) |
+| 2 | resources | [Resources](https://charmhub.io/openfga-k8s/resources) |
+<!-- | 1 | explanation | [Explanation](/t/<discourse-ID>) | -->
 
 
 <!--
@@ -59,7 +67,7 @@ IF YOU NEED TO REDIRECT FROM AN OLD URL TO A NEW URL, UNCOMMENT AND UPDATE THE R
 -->
 
 <!--
-# Redirects
+<a href="#heading--0003"><h1 id="heading--0003">Redirects</h1></a>
 
 [details=Mapping table]
 | Path | Location |
