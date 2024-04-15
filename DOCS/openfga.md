@@ -40,7 +40,7 @@ OpenFGA is a member of the Ubuntu family. It’s an open source project that war
 | -- | -- | -- |
 | 1 | tutorial | [Tutorial](/t/13827) |
 | 1 | reference | [Reference]() |
-| 2 | reference-observability | [OpenFGA Observability](/t/13828) |
+| 2 | reference-observability | [Observability](/t/13828) |
 | 2 | actions | [Actions](https://charmhub.io/openfga-k8s/actions) |
 | 2 | configurations | [Configurations](https://charmhub.io/openfga-k8s/configure) |
 | 2 | integrations | [Integrations](https://charmhub.io/openfga-k8s/integrations) |
