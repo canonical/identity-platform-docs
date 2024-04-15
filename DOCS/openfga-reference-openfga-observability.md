@@ -6,104 +6,108 @@ In this reference we will provide a technical description of the alert rules, an
 
 
 
-# Metrics
+# **Metrics**
 
-## up
-### Description
+---
+## **up**
+
+#### Description
 
 When this counter equals one, that means the instance the metric was scraped from is available to the Prometheus deployment. If the counter equals zero, or the metric is not present, then the application is inaccessible to the Prometheus deployment.
 
-### Source
+#### Source
 
 Prometheus
 
-### Intended
+#### Intended
 
-This metric signals whether a unit is unavailable. By specifying the label juju_unit this metric tells you whether the unit is available to the Prometheus component or not. Example: ```up{juju_unit="openfga-k8s/0"}```
+This metric signals whether a unit is unavailable. By specifying the label juju_unit this metric tells you whether the unit is available to the Prometheus component or not. 
 
-### Observed
+Example: ```up{juju_unit="openfga-k8s/0"}```
+
+#### Observed
 - **Alert Rules**: Rules in group OpenFGAUnavailable
 - **Dashboard**: OpenFGA Unit Availability
 
-## level
 
-### Description
+
+## **level**
+
+#### Description
 
 All OpenFGA logs have a level, to indicate the seriousness of an event. OpenFGA logs (and json formatted logs in general) can be filtered by log levels. 
 
-### Source
+#### Source
 
 Loki
 
-### Usage
+#### Usage
 
 Use the LogQL’s abilities to enumerate log entries that match a regex template, and to parse json logs and populate fields such as level. Example: ```{juju_charm="openfga"} | json | level =~ `error` ```
 
-### Observed
+#### Observed
 
 - **Alert Rules**: Rules in group OpenFGAHighSeverityLog
 - **Dashboard Visualisation**: OpenFGA High Severity Log Entries
 
 
+---
+---
 
-# Alerts
 
-# OpenFGAHighSeverityLog
+# **Alerts**
+---
+## **OpenFGAHighSeverityLog**
 ### Description
 
 Alerts in this alert group are fired based on how many log entries with the log level of error, critical, or fatal have been created in the last five minutes.
 
-### Data
+#### Data
 
 Loki
 
 
-# OpenFGAUnavailable
+## **OpenFGAUnavailable-multiple**
 
-### Description
+#### Description
 More than one unit in a multi-unit deployment is inactive.
 
-### Observed
+#### Observed
 
 Multiple operator instances have encountered an issue from which they can not recover within a minute. Without other alerts suggesting otherwise, the alert also suggests that there is at least one healthy unit in the deployment.
 
-### Severity
+#### Severity
 
-Error, because while the service is still available, there is now potential for a critical scenario.
+**Error**, because while the service is still available, there is now potential for a critical scenario.
 
-# OpenFGAUnavailable
+## **OpenFGAUnavailable-all**
 
-### Description
+#### Description
 
 No unit in the deployment is active.
 
-### Observed
+#### Observed
 
 None of the units in the deployment are active. The service is inaccessible.
 
-# Severity
+#### Severity
 
-Fatal. The service has failed, and can not recover without human intervention.
+**Fatal**. The service has failed, and can not recover without human intervention.
+
+---
+---
 
 # Dashboards
 
-## OpenFGA
+---
+## **OpenFGA**
 
-### Description
+#### Description
 
-Visualization for the number of log entries with levels error or above within 5 minutes spans.
+* visualization for the number of log entries with levels error or above within 5 minutes spans.
+* visualization displaying the availability of OpenFGA units. 
 
-### Associated
+#### Associated
 
-Alert rules in alert group **OpenFGAHighSeverityLog**.
-
-# OpenFGA
-
-### Description
-
-Visualization displaying the availability of OpenFGA units. 
-
-# Associated
-Alert rules in alert group **OpenFGAUnavailable**.
-
-
+* Alert rules in alert group **OpenFGAHighSeverityLog**.
+* Alert rules in alert group **OpenFGAUnavailable**.
