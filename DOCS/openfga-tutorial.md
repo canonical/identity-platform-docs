@@ -1,16 +1,6 @@
 This tutorial shows how to set up a fully working OpenFGA server using our charm, MicroK8s and Juju 
 
-OpenFGA requires a way to persist data, in the case of our charm we enforce the usage of a `postgreSQL` database
-
-
-**Contents:**
-* [Juju setup](#heading--0000)
-  * [Verify via API](#heading--0001)
-  * [Observability integration](#heading--0002)
-* [Scaling up/down](#heading--0003)
-
-<a href="#heading--0000"><h2 id="heading--0000">Juju setup</h2></a>
-
+# Set things up
 
 Bootstrap a [microk8s controller](https://juju.is/docs/juju/set-up--tear-down-your-test-environment#heading--set-up-automatically) using juju `3.2` and create a new Juju model:
 
@@ -18,6 +8,14 @@ Bootstrap a [microk8s controller](https://juju.is/docs/juju/set-up--tear-down-yo
 $ juju add-model openfga
 Added 'openfga' model on microk8s/localhost with credential 'microk8s' for user 'admin'
 ```
+
+> See more: [Set up your test environment automatically](https://juju.is/docs/juju/set-up--tear-down-your-test-environment#heading--set-up-automatically)
+
+
+
+# Watch the OpenFGA charm transform the way to deploy, configure, integrate, and manage OpenFGA on any Kubernetes cloud
+
+OpenFGA requires a way to persist data, in the case of our charm we enforce the usage of a `postgreSQL` database
 
 
 As mentioned, we need a persistent way to store `OpenFGA` data, we are going to be using the [`postgresql-k8s` charm](https://charmhub.io/postgresql-k8s) 
@@ -37,7 +35,12 @@ Once that is done (no need to wait for it to be ready) we can proceed in deployi
 $ juju deploy openfga-k8s --channel edge
 Located local charm "openfga-k8s", revision 0
 Deploying "openfga-k8s" from local charm "openfga-k8s", revision 0 on ubuntu@22.04/stable
+```
 
+## Integrate with PostgreSQL
+
+
+```shell 
 $ juju integrate postgresql-k8s:database openfga-k8s
 ```
 
@@ -67,7 +70,7 @@ postgresql-k8s:upgrade         postgresql-k8s:upgrade         upgrade           
 ```
 
 
-<a href="#heading--0001"><h3 id="heading--0001">Verify via API</h3></a>
+## Deployment checks
 
 Once all is up we can verify that OpenFGA is up and running by creating a store using the APIs
 
@@ -110,8 +113,7 @@ X-Request-Id: 1da6c68d-d3fe-4e01-b957-19da07cb5270
 }
 ```
 
-
-<a href="#heading--0002"><h3 id="heading--0002">Observability integration</h3></a>
+## Grafana, Loki, and Prometheus
 
 This OpenFGA operator integrates with [Canonical Observability Stack](https://charmhub.io/topics/canonical-observability-stack) (COS) bundle.
 It comes with a Grafana dashboard as well as Loki and Prometheus alert rules for basic common scenarios.
@@ -125,7 +127,7 @@ $ juju integrate loki:logging openfga:log-proxy
 ```
 
 
-<a href="#heading--0003"><h2 id="heading--0003">Scaling up/down</h2></a>
+## Scale 
 
 To scale the OpenFGA server we can exploit `juju scale-application`
 
@@ -163,3 +165,12 @@ postgresql-k8s:restart         postgresql-k8s:restart         rolling_op        
 postgresql-k8s:upgrade         postgresql-k8s:upgrade         upgrade            peer    
 ```
 ---
+
+
+# Tear things down
+
+To tear things down, remove the entire `openfga` model in juju with 
+
+```shell
+juju destroy-model openfga
+```

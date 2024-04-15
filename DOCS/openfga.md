@@ -1,22 +1,12 @@
-**Contents:**
-* [**OpenFGA**](#heading--0000)
-  * [In this documentation](#heading--0001)
-  * [Project and community](#heading--0002)
-* [Redirects](#heading--0003)
-
-<a href="#heading--0000"><h1 id="heading--0000">**OpenFGA**</h1></a>
-
 `OpenFGA` is a [Kubernetes charm](https://juju.is/docs/olm/charmed-operator) for [OpenFGA](https://github.com/openfga/openfga)
 
 
-A high-performance and flexible authorization/permission engine built for developers and inspired by Google Zanzibar.
+A high-performance and flexible authorization/permission engine built for developers and inspired by [Google Zanzibar](https://zanzibar.academy/).
 
 OpenFGA is designed to make it easy for developers to model their application permissions and add and integrate fine-grained authorization into their applications.
 It allows in-memory data storage for quick development, as well as pluggable database modules. 
 
 The operator currently only supports PostgreSQL. 
-It offers an HTTP API and a gRPC API. It has SDKs for Node.js/JavaScript, GoLang, Python and .NET.
-
 
 <!--
 IF YOU HAVE OVERVIEW PAGES FOR THE VARIOUS DIATAXIS (https://diataxis.fr/) CATEGORIES: UNCOMMENT AND UPDATE THE SECTION BELOW AS WELL.
@@ -34,7 +24,7 @@ UPDATE THE SECTION BELOW TO REFLECT YOUR CHARM'S DETAILS.
 NOTE: FEEL FREE TO ADD ANY OTHER RELEVANT LINKS, E.G., A LINK TO THE CHARM'S DISCUSSION FORUM.
 -->
 
-<a href="#heading--0002"><h2 id="heading--0002">Project and community</h2></a>
+# Project and community
 
 OpenFGA is a member of the Ubuntu family. It’s an open source project that warmly welcomes community projects, contributions, suggestions, fixes and constructive feedback.
 
@@ -48,12 +38,11 @@ OpenFGA is a member of the Ubuntu family. It’s an open source project that war
 
 | Level | Path | Navlink |
 | -- | -- | -- |
-| 1 |  | [Home](/t/13826) |
 | 1 | tutorial | [Tutorial](/t/13827) |
 <!-- | 1 | how-to | [How-to guides]() | -->
 <!-- | 2 | configure | [Configure](/t/<discourse-ID>) -->
 | 1 | reference | Reference |
-| 2 | reference/observability | [OpenFGA Observability](/t/13828) |
+| 2 | reference-observability | [OpenFGA Observability](/t/13828) |
 | 2 | actions | [Actions](https://charmhub.io/openfga-k8s/actions) |
 | 2 | configurations | [Configurations](https://charmhub.io/openfga-k8s/configure) |
 | 2 | integrations | [Integrations](https://charmhub.io/openfga-k8s/integrations) |
