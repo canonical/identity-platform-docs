@@ -17,13 +17,14 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r discourse-sync/requirements.txt
-      - name: Run add-table-of-contents
-        env:
-          TOC_INPUT: ./DOCS
-          TOC_OUTPUT: ./DOCS_TOC
-        run : |
-          mkdir ./DOCS_TOC
-          python ./add-table-of-contents/main.py
+      # remove auto toc for now
+      # - name: Run add-table-of-contents
+      #   env:
+      #     TOC_INPUT: ./DOCS
+      #     TOC_OUTPUT: ./DOCS_TOC
+      #   run : |
+      #     mkdir ./DOCS_TOC
+      #     python ./add-table-of-contents/main.py
       - name: Run discord-sync
         env:
           DISCOURSE_API_USERNAME: ${{ secrets.DISCOURSE_API_USERNAME }}
