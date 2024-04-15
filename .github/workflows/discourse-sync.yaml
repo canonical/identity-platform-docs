@@ -29,7 +29,7 @@ jobs:
         env:
           DISCOURSE_API_USERNAME: ${{ secrets.DISCOURSE_API_USERNAME }}
           DISCOURSE_API_KEY: ${{ secrets.DISCOURSE_API_KEY }}
-          DOCS_DIR: ./DOCS_TOC
+          DOCS_DIR: ./DOCS
           TOPIC_IDS: ./topic-ids.yaml
         run: |
           python ./discourse-sync/main.py sync
