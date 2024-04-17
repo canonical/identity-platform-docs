@@ -6,7 +6,7 @@ The Canonical Identity Platform is the simplest way to add single sign on (SSO) 
 
 The Canonical Identity Platform uses best of breed open source software to provide:
 - The ability to configure SSO with third party, OIDC compliant identity providers (e.g. Azure AD, Google, Okta, etc.)
-- A standard compliant compliant OAuth/OIDC server 
+- A standard compliant OAuth/OIDC server
 - User and client management functionalities
 - A relationship based access control (ReBAC) backend
 - A login UI and error pages
