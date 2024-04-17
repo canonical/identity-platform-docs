@@ -19,3 +19,5 @@ identity-platform-login-ui: 12169
 openfga-reference-observability: 13828
 openfga: 13826
 openfga-tutorial: 13827
+glauth-utils: 13948
+glauth-utils-tutorial: 13949

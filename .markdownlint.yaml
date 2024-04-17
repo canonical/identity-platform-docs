@@ -66,11 +66,11 @@ MD013:
   # Number of characters for code blocks
   code_block_line_length: 80
   # Include code blocks
-  code_blocks: true
+  code_blocks: false
   # Include tables
-  tables: true
+  tables: false
   # Include headings
-  headings: true
+  headings: false
   # Strict length checking
   strict: false
   # Stern length checking

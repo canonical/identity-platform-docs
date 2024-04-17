@@ -1,7 +1,9 @@
+# Charmed GLAuth K8s Tutorial
+
 This tutorial aims to provide a general walkthrough to set up a fully working
 GLAuth server using `glauth-k8s` charmed operator, MicroK8s, and Juju.
 
-# Set up the environment
+## Set up the environment
 
 Follow
 this [guide](https://juju.is/docs/juju/set-up--tear-down-your-test-environment)
@@ -114,7 +116,7 @@ postgresql-k8s:upgrade                 postgresql-k8s:upgrade         upgrade   
 self-signed-certificates:certificates  glauth-k8s:certificates        tls-certificates      regular
 ```
 
-# Tear down
+## Tear down the environment
 
 Remove the `dev` Juju model:
 
