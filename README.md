@@ -1,17 +1,12 @@
-# Documentation for the Canonical Identity Platform
-
+# Canonical Identity Platform Documentation
 
 [![Discourse Sync](https://github.com/canonical/canonical-identity-platform-docs/actions/workflows/discourse-sync.yaml/badge.svg)](https://github.com/canonical/canonical-identity-platform-docs/actions/workflows/discourse-sync.yaml)
-
-
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
 
 ## Description
 
-This repository hosts and syncs all documentations relating to the Canonical Identity Platform. The Canonical Identity Platform is a set of configured and interconnected Juju charmed operators that enable user authentication.
+This repository contains all the documentation related to
+the [Canonical Identity Platform](https://charmhub.io/identity-platform).
 
-Documentations on this repository are automatically synchronized to the bundle's discord page.
-
-
-## Usage
-
-Merging a pull request to main triggers synchronizing the documents. 
+The documentation is synchronized automatically with the Discord pages for the
+Identity Platform bundle.
