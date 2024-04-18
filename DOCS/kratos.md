@@ -1,4 +1,4 @@
-`kratos` is a [Kubernetes charm](https://juju.is/docs/olm/charmed-operator) for [Ory Kratos](https://github.com/ory/kratos). It is currently maintained as a part of the [`identity-platform` bundle](https://charmhub.io/identity-platform).
+`kratos` is a [Kubernetes charm](https://juju.is/docs/olm/charmed-operator) for [Ory Kratos](https://github.com/ory/kratos). It is currently maintained as a part of the [`identity-platform`](https://charmhub.io/topics/canonical-identity-platform).
 
 ## Project and community
 

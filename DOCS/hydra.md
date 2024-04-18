@@ -1,4 +1,4 @@
-`hydra` is a [Kubernetes charm](https://juju.is/docs/olm/charmed-operator) for [Ory Hydra](https://github.com/ory/hydra). It is currently maintained as a part of the [`identity-platform` bundle](https://charmhub.io/identity-platform).
+`hydra` is a [Kubernetes charm](https://juju.is/docs/olm/charmed-operator) for [Ory Hydra](https://github.com/ory/hydra). It is currently maintained as a part of the [`identity-platform`](https://charmhub.io/topics/canonical-identity-platform).
 
 
 ## Project and community
