@@ -23,3 +23,7 @@ glauth-utils: 13948
 glauth-utils-tutorial: 13949
 glauth: 13946
 glauth-tutorial: 13947
+oathkeeper: 13972
+oathkeeper-how-to-integrate: 13971
+oathkeeper-reference-auth-proxy: 13973
+oathkeeper-reference-access-proxy-flow: 13975
