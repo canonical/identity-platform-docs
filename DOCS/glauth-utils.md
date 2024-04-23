@@ -34,4 +34,3 @@ project? [Get in touch with the team!](https://matrix.to/#/!nRbdoDYxdQndEfzlJi:u
 | 2     | integrations   | [Integrations](https://charmhub.io/glauth-utils/integrations) |
 | 2     | libraries      | [Libraries](https://charmhub.io/glauth-utils/libraries)       |
 | 2     | resources      | [Resources](https://charmhub.io/glauth-utils/resources)       |
-| 1     | explanation    | [Explanation](/t/<discourse-ID>)                              |
