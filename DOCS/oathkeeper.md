@@ -9,7 +9,7 @@ Charmed Oathkeeper is a member of the Ubuntu family. It’s an open source proje
 
 - [Code of conduct](https://ubuntu.com/community/code-of-conduct)
 - [Join the Discourse community forum](https://discourse.charmhub.io/tag/identity)
-- [Join the Mattermost community chat](https://matrix.to/#/!nRbdoDYxdQndEfzlJi:ubuntu.com?via=ubuntu.com)
+- [Join the Matrix community chat](https://matrix.to/#/!nRbdoDYxdQndEfzlJi:ubuntu.com?via=ubuntu.com)
 - [Contribute on GitHub](https://github.com/canonical/oathkeeper-operator)
 
 Thinking about using Oathkeeper for your next project? [Get in touch](https://matrix.to/#/!nRbdoDYxdQndEfzlJi:ubuntu.com?via=ubuntu.com) with the team!
