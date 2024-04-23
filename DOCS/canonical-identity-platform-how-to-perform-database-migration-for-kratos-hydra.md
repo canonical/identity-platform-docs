@@ -5,7 +5,7 @@ Charmed [Kratos](https://github.com/canonical/kratos-operator) and [Hydra](https
 ## Some facts and reminders
 - Charm releases may contain the new version of the corresponding Ory open source product. This means each Charm release will probably require you to do migration. You should refer to the Charm releases (e.g. [Kratos releases](https://github.com/canonical/kratos-operator/releases)) and the Ory product release changelogs (e.g. [Ory Kratos CHANGELOG.md](https://github.com/ory/kratos/blob/master/CHANGELOG.md)) to check whether a migration is needed.
 - The upstream Ory products provide [CLI](https://www.ory.sh/docs/kratos/cli/kratos-migrate-sql) to assist with database migrations, however they do not provide further guidelines for migrating database in production environments or large-scale distributed systems.
-- There is no silver bullet when coming to database migrations. If your case does not fit in any strategies described in this document please feel free to reach out on [Charmhub](https://discourse.charmhub.io/) or our public [Mattermost channel](https://chat.charmhub.io/charmhub/channels/iam-platform).
+- There is no silver bullet when coming to database migrations. If your case does not fit in any strategies described in this document please feel free to reach out on [Charmhub](https://discourse.charmhub.io/) or our public [Matrix channel](https://matrix.to/#/!nRbdoDYxdQndEfzlJi:ubuntu.com?via=ubuntu.com).
 
 ## Database migration strategies
 
