@@ -19,7 +19,7 @@ Thinking about using Oathkeeper for your next project? [Get in touch](https://ma
 | Level | Path           | Navlink                                                        |
 |-------|----------------|----------------------------------------------------------------|
 | 1     |                | [Home](/t/13972)                                               |
-| 1     | tutorial       | [Tutorial](/t/<discourse-id>)                                  |
+| 1     | tutorial       | [Tutorial](/t/14000)                                           |
 | 1     | how-to         | [How-to guides](/t/13971)                                      | |
 | 1     | reference      | [Reference](/t/13973)                                          |
 | 2     | actions        | [Actions](https://charmhub.io/oathkeeper/actions)              |
