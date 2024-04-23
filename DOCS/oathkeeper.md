@@ -27,4 +27,3 @@ Thinking about using Oathkeeper for your next project? [Get in touch](https://ma
 | 2     | integrations   | [Integrations](https://charmhub.io/oathkeeper/integrations)    |
 | 2     | libraries      | [Libraries](https://charmhub.io/oathkeeper/libraries)          |
 | 2     | resources      | [Resources](https://charmhub.io/oathkeeper/resources)          |
-| 1     | explanation    | [Explanation](/t/<discourse-ID>)                               |
