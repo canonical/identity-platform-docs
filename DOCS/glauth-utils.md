@@ -24,7 +24,6 @@ project? [Get in touch with the team!](https://matrix.to/#/!nRbdoDYxdQndEfzlJi:u
 
 | Level | Path           | Navlink                                                       |
 |-------|----------------|---------------------------------------------------------------|
-| 1     |                | [Home](/t/13948)                 |
 | 1     | tutorial       | [Tutorial](/t/13949)                                 |
 | 1     | how-to         | [How-to guides](/t/<discourse-ID>)                            |
 | 2     | configure      | [Configure](/t/<discourse-ID>)                                |
