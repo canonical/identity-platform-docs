@@ -16,14 +16,14 @@ Thinking about using Oathkeeper for your next project? [Get in touch](https://ma
 
 ## Navigation
 
-| Level | Path           | Navlink                                                        |
-|-------|----------------|----------------------------------------------------------------|
-| 1     |                | [Home](/t/13972)                                               |
-| 1     | tutorial       | [Tutorial](/t/14000)                                           |
-| 1     | how-to         | [How-to guides](/t/13971)                                      | |
-| 1     | reference      | [Reference](/t/13973)                                          |
-| 2     | actions        | [Actions](https://charmhub.io/oathkeeper/actions)              |
-| 2     | configuration  | [Configurations](https://charmhub.io/oathkeeper/configuration) |
-| 2     | integrations   | [Integrations](https://charmhub.io/oathkeeper/integrations)    |
-| 2     | libraries      | [Libraries](https://charmhub.io/oathkeeper/libraries)          |
-| 2     | resources      | [Resources](https://charmhub.io/oathkeeper/resources)          |
+| Level | Path           | Navlink                                                                    |
+|-------|----------------|----------------------------------------------------------------------------|
+| 1     | tutorial       | [Tutorial](/t/14000)                                                       |
+| 1     | how-to         | [How-to]()                                                                 |
+| 2     | how-to         | [Integrate your Charmed Operator with Identity and Access Proxy](/t/13971) |
+| 1     | reference      | [Reference](/t/13973)                                                      |
+| 2     | actions        | [Actions](https://charmhub.io/oathkeeper/actions)                          |
+| 2     | configuration  | [Configurations](https://charmhub.io/oathkeeper/configuration)             |
+| 2     | integrations   | [Integrations](https://charmhub.io/oathkeeper/integrations)                |
+| 2     | libraries      | [Libraries](https://charmhub.io/oathkeeper/libraries)                      |
+| 2     | resources      | [Resources](https://charmhub.io/oathkeeper/resources)                      |
