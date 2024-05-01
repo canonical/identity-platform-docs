@@ -33,7 +33,6 @@ Once that is done (no need to wait for it to be ready) we can proceed in deployi
 
 ```shell
 $ juju deploy openfga-k8s --channel edge
-Located local charm "openfga-k8s", revision 0
 Deploying "openfga-k8s" from local charm "openfga-k8s", revision 0 on ubuntu@22.04/stable
 ```
 
