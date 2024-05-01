@@ -14,6 +14,7 @@ canonical-identity-platform-reference-kratos-observability: 11931
 canonical-identity-platform-reference-login-ui-observability: 11932
 kratos: 12136
 hydra: 12158
+hydra-tutorial: 14087
 kratos-external-idp-integrator: 12168
 identity-platform-login-ui: 12169
 openfga-reference-observability: 13828
