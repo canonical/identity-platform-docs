@@ -1,5 +1,5 @@
 # Charmed Oathkeeper
-Oathkeeper is a Kubernetes charmed operator for [Ory Oathkeeper](https://www.ory.sh/docs/oathkeeper) - a cloud native Identity & Access Proxy (IAP) and Access Control Decision API that authenticates, authorizes, and mutates incoming HTTP(s) requests. It integrates with the [Canonical Identity Platform](https://charmhub.io/topics/canonical-identity-platform?_ga=2.166056574.1714623054.1713359683-1686981834.1641824009).
+Oathkeeper is a Kubernetes charmed operator for [Ory Oathkeeper](https://www.ory.sh/docs/oathkeeper) - a cloud native Identity & Access Proxy (IAP) and Access Control Decision API that authenticates, authorizes, and mutates incoming HTTP(s) requests. It integrates with the [Canonical Identity Platform](https://charmhub.io/topics/canonical-identity-platform).
 
 The `oathkeeper` charmed operator handles deployment, scaling, configuration, and other operations on top of [Juju](https://juju.is/).
 
