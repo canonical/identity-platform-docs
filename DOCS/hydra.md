@@ -11,7 +11,7 @@ Charmed Hydra is a member of the Ubuntu family. It’s an open source project th
 - [Join the Matrix community chat](https://matrix.to/#/!nRbdoDYxdQndEfzlJi:ubuntu.com?via=ubuntu.com)
 - [Contribute on GitHub](https://github.com/canonical/hydra-operator)
 
-Thinking about using Oathkeeper for your next project? [Get in touch](https://matrix.to/#/!nRbdoDYxdQndEfzlJi:ubuntu.com?via=ubuntu.com) with the team!
+Thinking about using Hydra for your next project? [Get in touch](https://matrix.to/#/!nRbdoDYxdQndEfzlJi:ubuntu.com?via=ubuntu.com) with the team!
 
 ## Navigation
 
