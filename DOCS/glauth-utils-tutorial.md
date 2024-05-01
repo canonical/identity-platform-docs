@@ -48,5 +48,5 @@ juju integrate glauth-utils:glauth-auxiliary glauth-k8s:glauth-auxiliary
 Remove the `dev` Juju model:
 
 ```shell
-juju destroy-model openfga
+juju destroy-model dev
 ```
