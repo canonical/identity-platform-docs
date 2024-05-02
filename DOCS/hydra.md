@@ -19,8 +19,8 @@ Thinking about using Hydra for your next project? [Get in touch](https://matrix.
 |-------|----------------|----------------------------------------------------------------------------|
 | 1     | tutorial       | [Tutorial](/t/14087)                                                       |
 | 1     | how-to         | [How-to]()                                                                 |
+| 2 | how-to/ory-database-migration | [Perform Database Migration with Identity Platform Components](/t/11912) |
 | 2 | how-to/integrate-oidc-compatible-charms | [Integrate with OIDC compatible charms ](/t/11909) |
-                                                      |
 | 2     | actions        | [Actions](https://charmhub.io/hydra/actions)                          |
 | 2     | configuration  | [Configurations](https://charmhub.io/hydra/configuration)             |
 | 2     | integrations   | [Integrations](https://charmhub.io/hydra/integrations)                |
