@@ -21,7 +21,8 @@ Thinking about using Kratos for your next project? [Get in touch](https://matrix
 | 1     | tutorial       | [Tutorial](/t/14090)                                                       |
 | 1     | how-to         | [How-to]()                                                                 |
 | 2 | how-to/integrate-external-identity-provider | [Integrate with external identity providers](/t/11910) |
-| 2 | how-to/ory-database-migration | [Perform Database Migration with Identity Platform Components](/t/11912) |                                                      
+| 2 | how-to/ory-database-migration | [Perform Database Migration with Identity Platform Components](/t/11912) |
+| 1     | reference      | [Reference]()                              |                                                      
 | 2     | actions        | [Actions](https://charmhub.io/kratos/actions)                          |
 | 2     | configuration  | [Configurations](https://charmhub.io/kratos/configuration)             |
 | 2     | integrations   | [Integrations](https://charmhub.io/kratos/integrations)                |
