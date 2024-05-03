@@ -28,9 +28,8 @@ project? [Get in touch with the team!](https://matrix.to/#/!nRbdoDYxdQndEfzlJi:u
 | Level | Path           | Navlink                                                     |
 |-------|----------------|-------------------------------------------------------------|
 | 1     | tutorial       | [Tutorial](/t/13947)                                        |
-| 1     | how-to         | [How-to guides](/t/<discourse-ID>)                          |
-| 2     | configure      | [Configure](/t/<discourse-ID>)                              |
-| 1     | reference      | [Reference](/t/<discourse-ID>)                              |
+| 1     | how-to         | How-to guides                                               |
+| 1     | reference      | Reference                                                   |
 | 2     | actions        | [Actions](https://charmhub.io/glauth-k8s/actions)           |
 | 2     | configurations | [Configurations](https://charmhub.io/glauth-k8s/configure)  |
 | 2     | integrations   | [Integrations](https://charmhub.io/glauth-k8s/integrations) |

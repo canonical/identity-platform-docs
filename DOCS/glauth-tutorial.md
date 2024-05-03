@@ -121,5 +121,5 @@ self-signed-certificates:certificates  glauth-k8s:certificates        tls-certif
 Remove the `dev` Juju model:
 
 ```shell
-juju destroy-model openfga
+juju destroy-model dev
 ```
