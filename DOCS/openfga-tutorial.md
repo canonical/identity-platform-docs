@@ -12,13 +12,16 @@ Added 'openfga' model on microk8s/localhost with credential 'microk8s' for user 
 > See more: [Set up your test environment automatically](https://juju.is/docs/juju/set-up--tear-down-your-test-environment#heading--set-up-automatically)
 
 
+## Deploy the charm
 
-# Watch the OpenFGA charm transform the way to deploy, configure, integrate, and manage OpenFGA on any Kubernetes cloud
+Deploy the openfga charm:
 
-OpenFGA requires a way to persist data, in the case of our charm we enforce the usage of a `postgreSQL` database
+```shell
+$ juju deploy openfga-k8s --channel edge
+Deploying "openfga-k8s" from local charm "openfga-k8s", revision 0 on ubuntu@22.04/stable
+```
 
-
-As mentioned, we need a persistent way to store `OpenFGA` data, we are going to be using the [`postgresql-k8s` charm](https://charmhub.io/postgresql-k8s)
+OpenFGA requires a way to persist data, in the case of our charm we enforce the usage of a `postgreSQL` database. We are going to be using the [`postgresql-k8s` charm](https://charmhub.io/postgresql-k8s)
 
 
 ```shell
@@ -28,16 +31,10 @@ Deploying "postgresql-k8s" from charm-hub charm "postgresql-k8s", revision 233 i
 
 ```
 
-Once that is done (no need to wait for it to be ready) we can proceed in deploying `openfga` and integrate the 2 charms
-
-
-```shell
-$ juju deploy openfga-k8s --channel edge
-Deploying "openfga-k8s" from local charm "openfga-k8s", revision 0 on ubuntu@22.04/stable
-```
 
 ## Integrate with PostgreSQL
 
+Once that is done (no need to wait for it to be ready) we can proceed in deploying `openfga` and integrate the 2 charms
 
 ```shell
 $ juju integrate postgresql-k8s:database openfga-k8s
