@@ -1,4 +1,4 @@
-This tutorial shows how to set up a fully working OpenFGA server using our charm, MicroK8s and Juju 
+This tutorial shows how to set up a fully working OpenFGA server using our charm, MicroK8s and Juju
 
 # Set things up
 
@@ -18,7 +18,7 @@ Added 'openfga' model on microk8s/localhost with credential 'microk8s' for user 
 OpenFGA requires a way to persist data, in the case of our charm we enforce the usage of a `postgreSQL` database
 
 
-As mentioned, we need a persistent way to store `OpenFGA` data, we are going to be using the [`postgresql-k8s` charm](https://charmhub.io/postgresql-k8s) 
+As mentioned, we need a persistent way to store `OpenFGA` data, we are going to be using the [`postgresql-k8s` charm](https://charmhub.io/postgresql-k8s)
 
 
 ```shell
@@ -28,7 +28,7 @@ Deploying "postgresql-k8s" from charm-hub charm "postgresql-k8s", revision 233 i
 
 ```
 
-Once that is done (no need to wait for it to be ready) we can proceed in deploying `openfga` and integrate the 2 charms 
+Once that is done (no need to wait for it to be ready) we can proceed in deploying `openfga` and integrate the 2 charms
 
 
 ```shell
@@ -39,7 +39,7 @@ Deploying "openfga-k8s" from local charm "openfga-k8s", revision 0 on ubuntu@22.
 ## Integrate with PostgreSQL
 
 
-```shell 
+```shell
 $ juju integrate postgresql-k8s:database openfga-k8s
 ```
 
@@ -47,25 +47,25 @@ after some time we should be able to inspect that all has been successfully depl
 
 
 ```shell
-$ juju status --relations                           
+$ juju status --relations
 
 Model    Controller          Cloud/Region        Version  SLA          Timestamp
 openfga  microk8s-localhost  microk8s/localhost  3.1.7    unsupported  15:59:57+02:00
 
 App             Version  Status  Scale  Charm           Channel  Rev  Address         Exposed  Message
-openfga-k8s              active      1  openfga-k8s                0  10.152.183.172  no       
+openfga-k8s              active      1  openfga-k8s                0  10.152.183.172  no
 postgresql-k8s  14.11    active      1  postgresql-k8s  14/edge  233  10.152.183.177  no       Primary
 
 Unit               Workload  Agent  Address       Ports  Message
-openfga-k8s/0*     active    idle   10.1.245.154         
+openfga-k8s/0*     active    idle   10.1.245.154
 postgresql-k8s/0*  active    idle   10.1.245.156         Primary
 
 Integration provider           Requirer                       Interface          Type     Message
-openfga-k8s:peer               openfga-k8s:peer               openfga-peer       peer     
-postgresql-k8s:database        openfga-k8s:database           postgresql_client  regular  
-postgresql-k8s:database-peers  postgresql-k8s:database-peers  postgresql_peers   peer     
-postgresql-k8s:restart         postgresql-k8s:restart         rolling_op         peer     
-postgresql-k8s:upgrade         postgresql-k8s:upgrade         upgrade            peer   
+openfga-k8s:peer               openfga-k8s:peer               openfga-peer       peer
+postgresql-k8s:database        openfga-k8s:database           postgresql_client  regular
+postgresql-k8s:database-peers  postgresql-k8s:database-peers  postgresql_peers   peer
+postgresql-k8s:restart         postgresql-k8s:restart         rolling_op         peer
+postgresql-k8s:upgrade         postgresql-k8s:upgrade         upgrade            peer
 ```
 
 
@@ -76,11 +76,11 @@ Once all is up we can verify that OpenFGA is up and running by creating a store 
 First find the secret:
 
 ```shell
-$ juju secrets                      
+$ juju secrets
 ID                    Owner           Rotation  Revision  Last updated
-co9vcjrmrojc77r2rd2g  openfga-k8s     never            1  20 minutes ago  
-co9vd83mrojc77r2rd30  postgresql-k8s  never            1  19 minutes ago  
-co9vg4bmrojc77r2rd3g  postgresql-k8s  never            1  13 minutes ago  
+co9vcjrmrojc77r2rd2g  openfga-k8s     never            1  20 minutes ago
+co9vd83mrojc77r2rd30  postgresql-k8s  never            1  19 minutes ago
+co9vg4bmrojc77r2rd3g  postgresql-k8s  never            1  13 minutes ago
 
 $ juju show-secret co9vcjrmrojc77r2rd2g --reveal
 co9vcjrmrojc77r2rd2g:
@@ -95,7 +95,7 @@ co9vcjrmrojc77r2rd2g:
 Then we can try to create a store using the HTTP API (via `httpie`):
 
 ```shell
-$ http POST :8080/stores name=openfga-demo Authorization:" Bearer tMkhBA0drx2nfqIubs9vR9KSeC3oIen5jYesTEL_gjM"                                           
+$ http POST :8080/stores name=openfga-demo Authorization:" Bearer tMkhBA0drx2nfqIubs9vR9KSeC3oIen5jYesTEL_gjM"
 HTTP/1.1 201 Created
 Content-Length: 143
 Content-Type: application/json
@@ -126,7 +126,7 @@ $ juju integrate loki:logging openfga:log-proxy
 ```
 
 
-## Scale 
+## Scale
 
 To scale the OpenFGA server we can exploit `juju scale-application`
 
@@ -140,35 +140,35 @@ In due time, we should be able to see that all the requested units have come up 
 
 
 ```shell
-$ juju status --relations                               
+$ juju status --relations
 Model    Controller          Cloud/Region        Version  SLA          Timestamp
 openfga  microk8s-localhost  microk8s/localhost  3.1.7    unsupported  16:37:36+02:00
 
 App             Version  Status  Scale  Charm           Channel  Rev  Address         Exposed  Message
-openfga-k8s              active      5  openfga-k8s                0  10.152.183.172  no       
+openfga-k8s              active      5  openfga-k8s                0  10.152.183.172  no
 postgresql-k8s  14.11    active      1  postgresql-k8s  14/edge  233  10.152.183.177  no       Primary
 
 Unit               Workload  Agent  Address       Ports  Message
-openfga-k8s/0*     active    idle   10.1.245.154         
-openfga-k8s/1      active    idle   10.1.245.141         
-openfga-k8s/2      active    idle   10.1.245.144         
-openfga-k8s/3      active    idle   10.1.245.155         
-openfga-k8s/4      active    idle   10.1.245.131         
+openfga-k8s/0*     active    idle   10.1.245.154
+openfga-k8s/1      active    idle   10.1.245.141
+openfga-k8s/2      active    idle   10.1.245.144
+openfga-k8s/3      active    idle   10.1.245.155
+openfga-k8s/4      active    idle   10.1.245.131
 postgresql-k8s/0*  active    idle   10.1.245.156         Primary
 
 Integration provider           Requirer                       Interface          Type     Message
-openfga-k8s:peer               openfga-k8s:peer               openfga-peer       peer     
-postgresql-k8s:database        openfga-k8s:database           postgresql_client  regular  
-postgresql-k8s:database-peers  postgresql-k8s:database-peers  postgresql_peers   peer     
-postgresql-k8s:restart         postgresql-k8s:restart         rolling_op         peer     
-postgresql-k8s:upgrade         postgresql-k8s:upgrade         upgrade            peer    
+openfga-k8s:peer               openfga-k8s:peer               openfga-peer       peer
+postgresql-k8s:database        openfga-k8s:database           postgresql_client  regular
+postgresql-k8s:database-peers  postgresql-k8s:database-peers  postgresql_peers   peer
+postgresql-k8s:restart         postgresql-k8s:restart         rolling_op         peer
+postgresql-k8s:upgrade         postgresql-k8s:upgrade         upgrade            peer
 ```
 ---
 
 
 # Tear things down
 
-To tear things down, remove the entire `openfga` model in juju with 
+To tear things down, remove the entire `openfga` model in juju with
 
 ```shell
 juju destroy-model openfga
