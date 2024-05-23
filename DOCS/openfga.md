@@ -10,6 +10,8 @@ The operator currently only supports PostgreSQL.
 
 ## In this documentation
 
+| | |
+|-|-|
 | [Tutorial](/t/13827)</br> **Get started** - a hands-on introduction to Example Product for new users </br> | [How-to guides](/t/14193) </br> **Step-by-step guides** covering key operations and common tasks |
 <!-- | [Explanation](/t/<discourse-ID>) </br> Discussion and clarification of key topics | [Reference](/t/<discourse-ID>) </br> **Technical information** - specifications, APIs, architecture | -->
 
