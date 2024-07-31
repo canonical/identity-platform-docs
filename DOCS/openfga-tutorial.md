@@ -25,9 +25,9 @@ OpenFGA requires a way to persist data, in the case of our charm we enforce the 
 
 
 ```shell
-$ juju deploy postgresql-k8s --channel edge
+$ juju deploy postgresql-k8s --channel 14/stable --trust
 Located charm "postgresql-k8s" in charm-hub, revision 233
-Deploying "postgresql-k8s" from charm-hub charm "postgresql-k8s", revision 233 in channel 14/edge on ubuntu@22.04/stable
+Deploying "postgresql-k8s" from charm-hub charm "postgresql-k8s", revision 233 in channel 14/stable on ubuntu@22.04/stable
 
 ```
 
@@ -51,7 +51,7 @@ openfga  microk8s-localhost  microk8s/localhost  3.1.7    unsupported  15:59:57+
 
 App             Version  Status  Scale  Charm           Channel  Rev  Address         Exposed  Message
 openfga-k8s              active      1  openfga-k8s                0  10.152.183.172  no
-postgresql-k8s  14.11    active      1  postgresql-k8s  14/edge  233  10.152.183.177  no       Primary
+postgresql-k8s  14.11    active      1  postgresql-k8s  14/stable  233  10.152.183.177  no       Primary
 
 Unit               Workload  Agent  Address       Ports  Message
 openfga-k8s/0*     active    idle   10.1.245.154
