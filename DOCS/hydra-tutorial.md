@@ -21,7 +21,7 @@ As mentioned, we need a persistent way to store `Hydra` data, we are going to be
 
 
 ```shell
-$ juju deploy postgresql-k8s --channel 14/stable postgresql
+$ juju deploy postgresql-k8s --channel 14/stable --trust postgresql
 Deployed "postgresql" from charm-hub charm "postgresql-k8s", revision 193 in channel 14/stable on ubuntu@22.04/stable
 ```
 
