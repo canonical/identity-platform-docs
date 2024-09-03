@@ -45,8 +45,11 @@ Thinking about using the Canonical Identity Platform for your next project? [Get
 | 2 | how-to/integrate-oidc-compatible-charms | [Integrate with OIDC compatible charms ](/t/11909) |
 | 2 | how-to/integrate-cos | [Integrate with Canonical Observability Stack](/t/11908) |
 | 2 | how-to/ory-database-migration | [Perform Database Migration with Identity Platform Components](/t/11912) |
+| 2 | how-to/manage-users | [Use local identity provider](/t/change-me) |
+| 2 | how-to/manage-users | [Manage users](/t/change-me) |
 | 1 | reference | Reference |
 | 2 | reference/bundles | Bundles |
+| 2 | reference/self-service-flows | [Self-service flows](/t/change-me) |
 | 3 | reference/bundles/identity-platform | [Identity Platform](https://charmhub.io/identity-platform) |
 | 3 | reference/bundles/architecture | [Architecture](/t/11913) |
 | 3 | reference/bundles/login-flow | [Login flow](/t/11914) |
