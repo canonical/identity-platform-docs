@@ -2,7 +2,7 @@ The Charmed Ory Kratos component of the Identity Platform is an identity and use
 that allows you to manage users locally rather than relying on third party identity providers.
 
 Alongside tasks that system administrators can perform, it also allows users to carry out certain actions on their own.
-We will refer to those operations as self-service flows. This document will enlist them and explain their mechanism.
+We will refer to those operations as self-service flows. This document will list them and explain their mechanisms.
 
 ## Account recovery
 

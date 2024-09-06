@@ -26,7 +26,7 @@ juju add-model iam
 To deploy the Identity Platform bundle, run:
 
 ```
-juju deploy identity-platform --trust --channel 0.3/beta
+juju deploy identity-platform --trust --channel 0.3/edge
 ```
 
 The Juju controller will now fetch the Identity Platform bundle from Charmhub and begin deploying it on the MicroK8s cloud.
@@ -122,16 +122,15 @@ juju config kratos-external-idp-integrator \
 After a while, the `kratos-external-idp-integrator` status will change to active. This means that Entra ID has been added as a Kratos sign-in provider.
 Congratulations, your deployment now uses Microsoft Entra ID as your external identity provider.
 
-# Use built-in identity provider
+# Use the built-in Identity Provider
 
 The Identity Platform comes with a built-in identity provider that you can use to manage users internally
 instead of delegating it to a third-party identity provider.
 You can also let your users authenticate both with external providers and the local one.
 
-The local identity provider feature is enabled by default in Identity Platform version 0.3.
+The local identity provider feature is enabled by default in Identity Platform version `0.3`.
 
-For the purpose of this tutorial, we will create an admin user.
-To do it, run the following juju action in Kratos:
+For the purpose of this tutorial, we will create an admin user:
 
 ```
 juju run kratos/0 create-admin-account email=test@example.com password=test username=admin

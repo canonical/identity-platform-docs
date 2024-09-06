@@ -17,7 +17,8 @@ by connecting with an authenticator app of their choice (e.g. Google Authenticat
 
 ![Alt]( https://raw.githubusercontent.com/canonical/canonical-identity-platform-docs/main/Diagram_sources/idp_secure_account_mfa.png "Set up MFA")
 
-It is also recommended that each user generates backup codes, so that they can be used as a fallback 2fa method in case the TOTP device is unavailable:
+It is also recommended that each user generates backup codes, so that they can be used as a fallback 2fa method in case the TOTP device is unavailable.
+To generate them, go to `https://<traefik-public-ip>/<model-name>-identity-platform-login-ui-operator/ui/setup_backup_codes`:
 
 ![Alt]( https://raw.githubusercontent.com/canonical/canonical-identity-platform-docs/main/Diagram_sources/idp_backup_codes.png "Generate backup codes")
 
@@ -35,7 +36,7 @@ We only recommend doing so for testing and development purposes.
 
 The Identity Platform offers the possibility to sign in using passkeys or security keys rather than with a username and password.
 This feature is not enabled by default and requires your deployment to meet the [WebAuthn criteria](https://www.w3.org/TR/webauthn/),
-such as a valid domain name for the Platform.
+such as a valid certificate and domain name for the Platform.
 WebAuthn is currently supported in Google Chrome, Mozilla Firefox, Microsoft Edge and Apple Safari web browsers.
 
 You can enable that feature by running:

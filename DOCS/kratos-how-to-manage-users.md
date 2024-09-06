@@ -4,7 +4,7 @@ rather than relying on third party identity providers, such as Google, Okta or M
 Kratos is the main component of the Identity Platform responsible for identity and user management.
 
 This guide explains common user management tasks that you can carry out in the built-in identity provider.
-Users are often referred to as identities, we'll use the two terms interchangeably.
+Users and user accounts are often referred to as identities, we'll use these terms interchangeably.
 
 # Account management
 
@@ -22,22 +22,33 @@ It is then advised to reset the newly created account's password by running the 
 
 Regular users can be created in the Admin UI component. Note that this component is not deployed as part of the Identity Platform.
 In order to add it to your deployment, run:
-```commandline
+```
 juju deploy identity-platform-admin-ui --channel edge --trust
 
 juju integrate identity-platform-admin-ui:ingress traefik-k8s
 juju integrate identity-platform-admin-ui:kratos-info kratos
 juju integrate identity-platform-admin-ui:hydra-endpoint-info hydra
+juju integrate identity-platform-admin-ui:oauth hydra
+juju integrate identity-platform-admin-ui openfga-k8s
+juju integrate identity-platform-admin-ui:receive-ca-cert self-signed-certificates
 ```
 
 Once the application is active, you can use the Admin UI user management page to create new accounts and change their permissions.
 
 ## Get user details
 
-You can fetch user details, such as identity traits (username, surname, phone number...) by running `get-identity` action in Kratos:
+You can fetch user details, such as identity traits (username, surname, phone number...) by running `get-identity` action in Kratos.
+
+It can be done using the identity id:
 
 ```
-juju run kratos/0 get-identity identity-id={identity_id} | email={email}
+juju run kratos/0 get-identity identity-id={identity_id}
+```
+
+Or email:
+
+```
+juju run kratos/0 get-identity email={email}
 ```
 
 ## Update users
@@ -82,7 +93,7 @@ to reset the password.
 
 ## Reset multi-factor authentication
 
-Administrators can reset identity's second authentication factor using either the identity id or email.
+Administrators can reset an identity's second authentication factor using either the identity id or email.
 The type of credentials to be removed must be specified, supported values are `totp` and `lookup_secret` (commonly known as backup codes):
 
 ```
@@ -96,18 +107,30 @@ to add a time-based one-time password (TOTP) multi-factor authentication on the 
 
 ## Invalidate sessions
 
-The following action can be used to invalidate all identity sessions using either its identity id or email:
+The following action can be used to invalidate all identity sessions using either its id:
 
 ```
-juju run kratos/0 invalidate-identity-sessions identity-id={identity_id} | email={email}
+juju run kratos/0 invalidate-identity-sessions identity-id={identity_id}
+```
+
+Or email:
+
+```
+juju run kratos/0 invalidate-identity-sessions email={email}
 ```
 
 ## Delete users
 
-You can delete existing users by their email or id:
+You can delete existing users by their id:
 
 ```
-juju run kratos/0 delete-identity identity-id={identity_id} | email={email}
+juju run kratos/0 delete-identity identity-id={identity_id}
+```
+
+Or email:
+
+```
+juju run kratos/0 delete-identity email={email}
 ```
 
 # Self-service flows
