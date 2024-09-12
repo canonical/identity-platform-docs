@@ -46,5 +46,5 @@ juju config kratos enable_passwordless_login_method=True
 ```
 
 ## User management
-Please refer to the [user management](/t/<change-me>) guide to learn how to create, update or delete users
+Please refer to the [user management](/t/15547) guide to learn how to create, update or delete users
 and perform common identity management tasks.

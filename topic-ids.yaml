@@ -32,3 +32,6 @@ oathkeeper-tutorial: 14000
 oathkeeper-how-to-integrate: 13971
 oathkeeper-reference-auth-proxy: 13973
 oathkeeper-reference-access-proxy-flow: 13975
+kratos-how-to-use-local-idp: 15548
+kratos-how-to-manage-users: 15547
+kratos-self-service-flows-reference: 15549

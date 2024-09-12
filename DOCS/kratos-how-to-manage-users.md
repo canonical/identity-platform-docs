@@ -103,7 +103,7 @@ juju run kratos/0 reset-identity-mfa identity-id={identity_id} mfa-type={totp|lo
 Note that unless you disabled the `enforce_mfa` config option, the user will be asked
 to add a time-based one-time password (TOTP) multi-factor authentication on the next login.
 
-> See more: [Enforce multi-factor authentication](/t/<change-me>)
+> See more: [Enforce multi-factor authentication](/t/15548)
 
 ## Invalidate sessions
 
@@ -135,4 +135,4 @@ juju run kratos/0 delete-identity email={email}
 
 # Self-service flows
 The Identity Platform implements flows that users can perform on their own instead of waiting for an administrative intervention.
-See the [self-service flows reference](/t/<change-me>) for more details.
+See the [self-service flows reference](/t/15549) for more details.
