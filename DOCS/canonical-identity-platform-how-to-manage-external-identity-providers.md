@@ -1,4 +1,11 @@
-The Identity Platform bundle is an Identity broker, this means that it relies on external identity providers to authenticate users and manage user attributes. This document demonstrates how to integrate with external providers.
+The Identity Platform comes with a built-in identity and user management system, but can also act as an identity broker. This means it is able to rely on external identity providers to authenticate users and manage user attributes. This document demonstrates how to integrate with external providers.
+
+[note]
+
+This guide explains how to integrate the Identity Platform with Google, Microsoft Entra ID and GitHub.
+See the full list of identity providers you can integrate with [here](https://www.ory.sh/docs/kratos/social-signin/generic).
+
+[/note]
 
 ## Add an external identity provider
 
@@ -26,7 +33,7 @@ The `provider-id` can be anything you want. Every provider that is registered wi
 
 After registering the provider you need to have the following information: `client_id`, `client_secret`.
 
-#### Azure AD
+#### Microsoft Entra ID
 
 You will need to create a confidential client in Azure AD and retrieve the client_id of the client.
 
@@ -45,6 +52,14 @@ You then need to retrieve the tenant_id.
 
 To create a confidential client in Google follow the instructions found in the [Google documentation](https://developers.google.com/identity/protocols/oauth2#1.-obtain-oauth-2.0-credentials-from-the-dynamic_data.setvar.console_name-.).
 
+#### GitHub
+
+To create a confidential client in GitHub, go to developer settings and [register a new GitHub application](https://github.com/settings/applications/new),
+providing Kratos redirect url as the authorization callback url.
+
+Next, generate a client secret and make sure to copy it along with the client id
+as it will be required in the next step.
+
 ### Provide the Client Credentials to Kratos
 
 Now that we have registered a client we need to provide the client credentials to Kratos. For this we are going to use an integrator charm, the purpose of this charm is to provide configuration to Kratos.
@@ -56,13 +71,20 @@ juju deploy kratos-external-idp-integrator
 juju integrate kratos kratos-external-idp-integrator
 ```
 
+[note]
+
+Each external identity provider you want to integrate with the Identity Platform
+will require a separate instance of the integrator charm.
+
+[/note]
+
 Then we need to configure the integrator charm. Depending on the provider that we use, a different set of configurations is needed. A list of instructions for some of the most common providers can be seen below. Please refer to the [integrator charm](https://charmhub.io/kratos-external-idp-integrator) and the [Kratos documentation](https://www.ory.sh/docs/kratos/social-signin/overview) for further details.
 
 Once you have configured the provider you will be able to choose to login in with that provider in the platform’s login page.
 
-#### Azure AD
+#### Microsoft Entra ID
 
-If your provider is Azure AD the following configuration is needed:
+If your provider is Entra ID the following configuration is needed:
 
 ```
 juju config kratos-external-idp-integrator \
@@ -81,6 +103,19 @@ juju config kratos-external-idp-integrator \
   provider=google \
   client_id=<client_id> \
   client_secret=<client_secret>
+```
+
+#### GitHub
+
+If your provider is GitHub the following configuration is needed:
+
+```
+juju config kratos-external-idp-integrator \
+  provider=github \
+  client_id=<client-id> \
+  client_secret=<client-secret> \
+  provider_id=github \
+  scope=user:email
 ```
 
 ### Choose Provider ID

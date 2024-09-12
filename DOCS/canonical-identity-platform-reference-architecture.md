@@ -20,4 +20,4 @@ The Canonical Identity Platform benefits from charm relation interfaces and juju
 
 - Charmed Kratos External IDP Integrator, which updates the configuration of the identity server (Charmed Kratos) with the external identity provider setup that is defined via juju config. You can define multiple identity providers by deploying more Integrator charm instances.
 
-Interested in learning how to integrate your application with the Canonical Identity Platform? Check our [how-to guides](TODO-how-to-page).
+Interested in learning how to integrate your application with the Canonical Identity Platform? Check our [how-to guides](/t/how-to-guides/11911).
