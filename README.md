@@ -31,4 +31,6 @@ Add `<page-name>: <page-id>` pairs to topic-ids.yaml.
 
 Create markdown files under DOCS. File names must match page names added to Discourse (`<page-name>.md`).
 
+Don't forget to update the relevant index `DOCS/<charm>.md`.
+
 Open a PR, ask for review, merge. Github automation should take care of the rest.
