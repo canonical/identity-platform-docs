@@ -14,9 +14,9 @@ Thinking about using Kratos External IDP Integrator for your next project? [Get 
 ## Navigation
 
 | Level | Path                                        | Navlink                                                                            |
-| ----- | ------------------------------------------- | ---------------------------------------------------------------------------------- | --- |
+| ----- | ------------------------------------------- | ---------------------------------------------------------------------------------- |
 | 1     | tutorial                                    | [Tutorial]()                                                                       |
-| 2     | tutorials/e2e-tutorial                      | [Getting started with the Canonical Identity Platform](/t/11916)                   |     |
+| 2     | tutorials/e2e-tutorial                      | [Getting started with the Canonical Identity Platform](/t/11916)                   |
 | 1     | how-to                                      | [How-to]()                                                                         |
 | 2     | how-to/integrate-external-identity-provider | [Integrate with external identity providers](/t/11910)                             |
 | 1     | reference                                   | [Reference]()                                                                      |
@@ -27,4 +27,3 @@ Thinking about using Kratos External IDP Integrator for your next project? [Get 
 | 2     | resources                                   | [Resources](https://charmhub.io/kratos-external-idp-integrator/resources)          |
 | 1     | explanation                                 | [Explanation](/t/15710)                                                            |
 | 2     | explanation-security                        | [Kratos External Idp Integrator Charm Security](/t/15711)                          |
-
