@@ -24,7 +24,7 @@ For each of the pages:
   - Category: change from `other` to `charm`.
   - Tags: `<charm-name>`, `docs`.
   - Description: anything, it will be replaced by Github automation.
-- Press Click Topic.
+- Press Create Topic button.
 - Get the numerical page ID from latest segment of the URL.
 
 Add `<page-name>: <page-id>` pairs to topic-ids.yaml.

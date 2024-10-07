@@ -11,20 +11,22 @@ Kratos is a member of the Ubuntu family. It’s an open source project that warm
 - [Join the Matrix community chat](https://matrix.to/#/!nRbdoDYxdQndEfzlJi:ubuntu.com?via=ubuntu.com)
 - [Contribute on GitHub](https://github.com/canonical/kratos-operator)
 
-
 Thinking about using Kratos for your next project? [Get in touch](https://matrix.to/#/!nRbdoDYxdQndEfzlJi:ubuntu.com?via=ubuntu.com) with the team!
 
 ## Navigation
 
-| Level | Path           | Navlink                                                                    |
-|-------|----------------|----------------------------------------------------------------------------|
-| 1     | tutorial       | [Tutorial](/t/14090)                                                       |
-| 1     | how-to         | [How-to]()                                                                 |
-| 2 | how-to/integrate-external-identity-provider | [Integrate with external identity providers](/t/11910) |
-| 2 | how-to/ory-database-migration | [Perform Database Migration with Identity Platform Components](/t/11912) |
-| 1     | reference      | [Reference]()                              |                                                      
-| 2     | actions        | [Actions](https://charmhub.io/kratos/actions)                          |
-| 2     | configuration  | [Configurations](https://charmhub.io/kratos/configuration)             |
-| 2     | integrations   | [Integrations](https://charmhub.io/kratos/integrations)                |
-| 2     | libraries      | [Libraries](https://charmhub.io/kratos/libraries)                      |
-| 2     | resources      | [Resources](https://charmhub.io/kratos/resources)                      |
+| Level | Path                                        | Navlink                                                                  |
+| ----- | ------------------------------------------- | ------------------------------------------------------------------------ |
+| 1     | tutorial                                    | [Tutorial](/t/14090)                                                     |
+| 1     | how-to                                      | [How-to]()                                                               |
+| 2     | how-to/integrate-external-identity-provider | [Integrate with external identity providers](/t/11910)                   |
+| 2     | how-to/ory-database-migration               | [Perform Database Migration with Identity Platform Components](/t/11912) |
+| 1     | reference                                   | [Reference]()                                                            |
+| 2     | actions                                     | [Actions](https://charmhub.io/kratos/actions)                            |
+| 2     | configuration                               | [Configurations](https://charmhub.io/kratos/configuration)               |
+| 2     | integrations                                | [Integrations](https://charmhub.io/kratos/integrations)                  |
+| 2     | libraries                                   | [Libraries](https://charmhub.io/kratos/libraries)                        |
+| 2     | resources                                   | [Resources](https://charmhub.io/kratos/resources)                        |
+| 1     | explanation                                 | [Explanation](/t/15707)                                                  |
+| 2     | explanation-security                        | [Kratos Charm Security](/t/15708)                                        |
+
