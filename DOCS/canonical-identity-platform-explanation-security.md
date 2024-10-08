@@ -1,5 +1,3 @@
-# Security in Canonical Identity Platform
-
 Security is a paramount concern in any identity management system, especially in an enterprise-grade platform like Canonical's Identity Platform. This document provides an overview of security within the Canonical Identity Platform, discussing common security risks, built-in protections, cryptographic approaches, and best practices. This guide is designed to help orient your thinking about security and provide guides to help you secure your identity infrastructure.
 
 ## Understanding Common Security Risks
