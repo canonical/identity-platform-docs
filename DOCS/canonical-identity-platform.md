@@ -5,6 +5,7 @@ The Canonical Identity Platform is the simplest way to add single sign on (SSO) 
 > See more: [Identity Platform](https://charmhub.io/identity-platform)
 
 The Canonical Identity Platform uses best of breed open source software to provide:
+
 - The ability to configure SSO with third party, OIDC compliant identity providers (e.g. Azure AD, Google, Okta, etc.)
 - A standard compliant OAuth/OIDC server
 - User and client management functionalities
@@ -15,10 +16,10 @@ While primarily designed for charmed workloads the Canonical Identity Platform c
 
 ## In this documentation
 
-| | |
-|-|-|
-| [Tutorial](/t/11917)</br>  Get started - a hands-on introduction for new users deploying the Identity Platform.</br> | [How-to guides](/t/11911) </br> Step-by-step guides covering key operations and common tasks |
-| [Reference](/t/11915) </br> Technical information - specifications, APIs, architecture    |
+|                                                                                                               |                                                                                                       |
+| ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| [Tutorial](/t/11917)</br> Get started - a hands-on introduction for new users deploying the Identity Platform | [How-to guides](/t/11911) </br> Step-by-step guides covering key operations and common tasks          |
+| [Reference](/t/11915) </br> Technical information - specifications, APIs, architecture                        | [Explanation](/t/15743) </br> Discussion and clarification of key topics related to Identity Platform |
 
 ## Project and community
 
@@ -33,6 +34,7 @@ The Canonical Identity Platform is a member of the Ubuntu family. It’s an open
 Thinking about using the Canonical Identity Platform for your next project? [Get in touch with the team!](https://chat.charmhub.io/charmhub/channels/iam-platform)
 
 # Navigation
+
 [details=Navigation]
 |Level|Path|Navlink|
 |--|--|--|
@@ -62,4 +64,6 @@ Thinking about using the Canonical Identity Platform for your next project? [Get
 | 3 | reference/kubernetes-charms/kratos | [Kratos](https://charmhub.io/kratos) |
 | 3 | reference/kubernetes-charms/kratos-external-idp-integrator | [Kratos External IdP Integrator](https://charmhub.io/kratos-external-idp-integrator) |
 | 3 | reference/kubernetes-charms/idp-ui | [Identity Platform Login UI](https://charmhub.io/identity-platform-login-ui-operator) |
+| 1 | explanation | [Explanation](/t/15743) |
+| 2 | explanation-security | [Kratos Charm Security](/t/15744) |
 [/details]
