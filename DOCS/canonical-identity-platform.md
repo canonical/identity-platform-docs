@@ -65,5 +65,5 @@ Thinking about using the Canonical Identity Platform for your next project? [Get
 | 3 | reference/kubernetes-charms/kratos-external-idp-integrator | [Kratos External IdP Integrator](https://charmhub.io/kratos-external-idp-integrator) |
 | 3 | reference/kubernetes-charms/idp-ui | [Identity Platform Login UI](https://charmhub.io/identity-platform-login-ui-operator) |
 | 1 | explanation | [Explanation](/t/15743) |
-| 2 | explanation-security | [Kratos Charm Security](/t/15744) |
+| 2 | explanation-security | [Security in Canonical Identity Platform](/t/15744) |
 [/details]
