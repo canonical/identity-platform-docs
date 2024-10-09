@@ -24,3 +24,8 @@ Github secrets are used during development, build, test and deploy phases:
 OpenFGA charm uses the following cryptography packages:
 
 - Python secrets built-in library is used to create an OpenFGA token.
+
+OpenFGA charm [supports](https://github.com/canonical/openfga-operator?tab=readme-ov-file#tls-certificates-interface) TLS encryption on internal and external connections. Security considerations related to TLS encryption:
+
+- It is recommended against using self-signed certificates for production clusters.
+- It is strongly recommended to use TLS v1.3, as it is more secure than v1.2.
